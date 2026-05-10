@@ -6,9 +6,8 @@ import Photo from '../assets/WhatsApp Image 2026-05-07 at 4.42.07 PM.jpeg'
 
 const Home = () => {
   
-  const resumeLink = "https://link-to-be-generated-manually-from-id"; 
-  
-  const directDownloadUrl = "https://drive.google.com/uc?export=download&id=1mtSkimdIdtKT_ObFWHXaGDZ5i9KVnSwe";
+  // Updated with your new Google Drive ID for Direct Download
+  const directDownloadUrl = "https://drive.google.com/uc?export=download&id=1WZLHNEA9Ort0pSPY1VUG7S1cuPvVssMo";
 
   return (
     <>
@@ -21,7 +20,7 @@ const Home = () => {
               <h1 className='text-xl lg:text-4xl whitespace-nowrap'>Hello, I'm</h1>
               <ReactTyped
                 className='text-red-400 font-bold text-xl lg:text-4xl whitespace-nowrap'
-                strings={["Frontend Dev", "React Dev", "UI Builder"]}
+                strings={["Frontend Developer", "React Specialist", "UI/UX Designer"]}
                 typeSpeed={40}
                 backSpeed={50}
                 loop={true}
@@ -29,18 +28,18 @@ const Home = () => {
             </div>
             <br />
             <p className='text-sm md:text-md text-justify'>
-              Passionate Frontend Developer skilled in building responsive and user-friendly web applications using React.js, JavaScript, and modern CSS frameworks. Fresher eager to turn ideas into clean, functional interfaces.
+              Passionate Frontend Developer based in <strong>Bhiwandi, Maharashtra</strong>. I specialize in building responsive and user-friendly web applications using React.js, JavaScript, and modern CSS frameworks. Motivated fresher eager to turn creative ideas into clean, functional interfaces.
             </p>
             <br />
 
-            {/* Download Resume Button - FIXED LINK */}
+            {/* Download Resume Button - LINK UPDATED */}
             <div className='flex justify-center md:justify-start'>
               <a 
                 href={directDownloadUrl} 
                 target="_blank" 
                 rel="noreferrer"
               >
-                <button className='bg-green-500 hover:bg-green-700 text-white font-bold px-6 py-2 rounded-lg duration-300 shadow-md transform hover:scale-105'>
+                <button className='bg-green-600 hover:bg-green-800 text-white font-bold px-8 py-3 rounded-lg duration-300 shadow-lg transform hover:scale-105'>
                   Download Resume
                 </button>
               </a>
@@ -73,9 +72,9 @@ const Home = () => {
               <div className='space-y-2'>
                 <h1 className='font-bold text-center'>Currently working on</h1>
                 <div className='flex space-x-5 justify-center'>
-                  <FaReact className='text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[1px] p-1 text-blue-400' />
-                  <RiTailwindCssFill className='text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[1px] p-1 text-cyan-400' />
-                  <FaJs className='text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[1px] p-1 text-yellow-400' />
+                  <FaReact title="React" className='text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[1px] p-1 text-blue-400' />
+                  <RiTailwindCssFill title="Tailwind CSS" className='text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[1px] p-1 text-cyan-400' />
+                  <FaJs title="JavaScript" className='text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[1px] p-1 text-yellow-400' />
                 </div>
               </div>
             </div>
