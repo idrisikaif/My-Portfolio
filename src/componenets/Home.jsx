@@ -15,16 +15,16 @@ const Home = () => {
             <div className='flex flex-col md:flex-row'>
                 <div className='w-full md:w-1/2 mt-12 md:my-24 space-y-2 order-2 md:order-1'>
                 <span className='text-xl'>Welcome to my portfolio</span>
-                <div className='flex space-x-3 text-2xl md:text-4xl min-h-[48px] items-center'>
-                <h1 className='text-2xl'>Hello, I'm </h1>
-                 <ReactTyped
-                  className='text-red-400 font-bold'
-                  strings={["Frontend Developer", "React Developer", "UI Builder"]}
-                  typeSpeed={40}
-                  backSpeed={50}
-                  loop={true}
-                />
-                </div>
+      <div className='flex items-center gap-x-2 min-h-[48px]'>
+  <h1 className='text-xl lg:text-4xl whitespace-nowrap'>Hello, I'm</h1>
+  <ReactTyped
+    className='text-red-400 font-bold text-xl lg:text-4xl whitespace-nowrap'
+    strings={["Frontend Dev", "React Dev", "UI Builder"]}
+    typeSpeed={40}
+    backSpeed={50}
+    loop={true}
+  />
+</div>
                 <br />
                 <p className='text-sm md:text-md text-justify'>
                   Passionate Frontend Developer skilled in building responsive and user-friendly web applications using React.js, JavaScript, and modern CSS frameworks. Fresher eager to turn ideas into clean, functional interfaces.
@@ -32,11 +32,13 @@ const Home = () => {
                 <br />
 
                 {/* Download Resume Button */}
-                <a href="/resume.pdf" download="Idrisi_Kaif_Resume.pdf">
-                  <button className='bg-green-500 hover:bg-green-700 text-white font-bold px-6 py-2 rounded-lg duration-300'>
-                    Download Resume
-                  </button>
-                </a>
+                <div className='flex justify-center md:justify-start'>
+  <a href="/resume.pdf" download="Idrisi_Kaif_Resume.pdf">
+    <button className='bg-green-500 hover:bg-green-700 text-white font-bold px-6 py-2 rounded-lg duration-300'>
+      Download Resume
+    </button>
+  </a>
+</div>
 
                 <br /><br />
 
