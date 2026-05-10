@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <>
-        {/* Navbar Container - Always Slate-900 */}
+        
         <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 shadow-lg h-20 fixed top-0 left-0 right-0 bg-slate-900 text-white z-50 border-b border-slate-800">
         <div className='flex justify-between h-20 items-center'>
             <div className='flex space-x-2'>  
@@ -55,7 +55,7 @@ const Navbar = () => {
             </div>
         </div>
         
-        {/* Mobile Menu - Always Slate-900 */}
+        
         {menu && (
             <div className='bg-slate-900 fixed inset-x-0 top-20 border-t border-slate-800'>
                 <ul className='md:hidden flex flex-col h-screen items-center justify-center space-y-6 text-xl bg-slate-900'>

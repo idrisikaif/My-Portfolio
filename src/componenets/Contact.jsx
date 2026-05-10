@@ -4,16 +4,16 @@ import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 
 function Contact() {
-    // 1. Initialize useForm with simple keys
+    
     const {
         register,
         handleSubmit,
         formState: { errors },
     } = useForm();
 
-    // 2. Form submission handler with Mapping
+    
     const onSubmit = async (data) => {
-        // Forminit ki requirement ke mutabiq keys map kar rahe hain
+    
         const formData = new FormData();
         formData.append("fi-sender-fullName", data.name);
         formData.append("fi-sender-email", data.email);
@@ -43,7 +43,7 @@ function Contact() {
                 >
                     <h1 className='text-xl font-semibold mb-4'>Send Your Message</h1>
                     
-                    {/* Full Name Field */}
+    
                     <div className='flex flex-col mb-4'>
                         <label className='block text-gray-700'>FullName:</label>
                         <input 
@@ -55,7 +55,7 @@ function Contact() {
                         {errors.name && <span className='text-red-500 text-sm'>{errors.name.message}</span>}
                     </div>
 
-                    {/* Email Field */}
+
                     <div className='flex flex-col mb-4'>
                         <label className='block text-gray-700'>Email:</label>
                         <input 
@@ -73,7 +73,7 @@ function Contact() {
                         {errors.email && <span className='text-red-500 text-sm'>{errors.email.message}</span>}
                     </div>
 
-                    {/* Message Field */}
+
                     <div className='flex flex-col mb-4'>
                         <label className='block text-gray-700'>Message:</label>
                         <textarea 
